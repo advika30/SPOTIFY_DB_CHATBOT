@@ -13,8 +13,7 @@ Built with **Google Gemini**, it automatically converts your questions into SQL,
   - `artists.artist_id → albums.artist_id`
   - `albums.album_id → tracks.album_id`
 - **.env Support**: Securely store your Google API key.
-
----
+  
 
 
 ## 🛠️ Setup Instructions
@@ -64,8 +63,6 @@ The SQL query is run against spotify.db.
 
 Results are displayed as a pretty, scrollable table.
 
-## 📸 Demo
-(Add a GIF or screenshot here)
 
 ## 📜 License
 MIT License — feel free to fork and build on this project.
