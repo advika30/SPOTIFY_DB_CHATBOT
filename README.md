@@ -3,7 +3,6 @@
 A Streamlit app that lets you query a **Spotify-style music database** using **natural language** — no SQL skills required!  
 Built with **Google Gemini**, it automatically converts your questions into SQL, runs them against a local SQLite database, and displays the results in a clean, interactive table.
 
----
 
 ## 🚀 Features
 
@@ -17,23 +16,10 @@ Built with **Google Gemini**, it automatically converts your questions into SQL,
 
 ---
 
-## 📂 Project Structure
-
-spotify-gemini-agent/
-│
-├── app.py # Streamlit app with Gemini integration
-├── spotify.db # Local SQLite database (synthetic Spotify data)
-├── create_db.py # Script to generate the synthetic database
-├── .env # Holds GOOGLE_API_KEY (not committed to Git)
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-
-
----
 
 ## 🛠️ Setup Instructions
 
-### 1️⃣ Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/yourusername/spotify-gemini-agent.git
 cd spotify-gemini-agent
@@ -46,7 +32,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 streamlit run app.py
 ```
 
-💡 Example Prompts
+### 💡 Example Prompts
 Try these in the app:
 
 Top 5 most streamed tracks
@@ -61,7 +47,7 @@ Aggregate data
 
 For each artist, show their total number of tracks and total streams, sorted by total streams in descending order.
 
-🧠 How It Works
+## How It Works
 On startup, the app reads the real SQLite schema (artists, albums, tracks) and passes it to Gemini.
 
 Gemini receives:
@@ -78,13 +64,13 @@ The SQL query is run against spotify.db.
 
 Results are displayed as a pretty, scrollable table.
 
-📸 Demo
+## 📸 Demo
 (Add a GIF or screenshot here)
 
-📜 License
+## 📜 License
 MIT License — feel free to fork and build on this project.
 
-💬 Acknowledgements
+## 💬 Acknowledgements
 Google Gemini API
 
 Streamlit
@@ -92,7 +78,3 @@ Streamlit
 SQLite
 
 Faker for synthetic data
-
-yaml
-Copy
-Edit
